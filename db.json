@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "user@example.com",
+      "password": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewYpR1IOBYyqQzHy",
+      "phone": "+1234567890",
+      "address": "123 Main St, City, Country",
+      "createdAt": "2024-02-20T00:00:00.000Z"
+    },
+    {
+      "name": "deepak kashyap",
+      "email": "aiice250609@gmail.com",
+      "password": "$2b$10$pWqmybBL7UeCpBxuJQfNcu0cLZ/pYXdfuPtGfE4NNTOW2yH0bqcL2",
+      "phone": "08171654421",
+      "address": "govindpuri, kalkaji, New Delhi, 110019",
+      "createdAt": "2025-05-25T18:01:21.977Z",
+      "id": "MPL4qnI"
+    },
+    {
+      "name": "Ravi",
+      "email": "ravi@gmail.com",
+      "password": "$2a$10$tw1hzCh.eWCWJA01fU4VZ.e47lziF3LAlcTUgem3LgdkySuR.UsZO",
+      "phone": "",
+      "address": "",
+      "createdAt": "2025-05-26T06:08:31.049Z",
+      "id": "ee1wxRy"
+    }
+  ]
+}
