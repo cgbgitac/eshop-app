@@ -45,7 +45,7 @@ export default function ProductDetail({ params }: PageProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
-  const product = products.find(p => p.id === parseInt(params.id)) as Product | undefined;
+  const product = products.find(p => p.id.toString() === params.id) as Product | undefined;
 
   const productImages = product ? (product.images && product.images.length > 0 ? product.images : [product.image]) : [];
 

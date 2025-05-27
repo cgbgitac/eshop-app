@@ -80,7 +80,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <p className="text-sm text-gray-500 mb-3 line-clamp-2">{product.description}</p>
         )}
         <div className="flex items-center justify-between">
-          <span className="text-lg font-bold text-blue-600">${product.price}</span>
+          <span className="text-lg font-bold text-blue-600">₹{product.price.toLocaleString('en-IN')}</span>
           <button
             onClick={handleAddToCart}
             className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors"
