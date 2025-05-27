@@ -16,6 +16,7 @@ export default function Header() {
   const navigation = [
     { href: '/', label: 'Home' },
     { href: '/products', label: 'Products' },
+    { href: '/contact', label: 'Contact' }
   ];
 
   const isActive = (path: string) => {

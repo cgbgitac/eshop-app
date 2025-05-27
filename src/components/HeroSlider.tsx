@@ -7,20 +7,25 @@ import { ArrowRight } from 'lucide-react';
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1920',
-    title: 'Discover Your Style with Our Latest Collection',
-    description: 'Shop the newest trends in fashion, electronics, and more',
+    image: 'https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=1920&q=80',
+    title: 'Latest Electronics',
+    description: 'Discover cutting-edge gadgets and smart devices with exclusive launch offers',
   },
   {
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920',
-    title: 'Premium Quality Products',
-    description: 'Explore our handpicked selection of high-quality items',
+    image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920&q=80',
+    title: 'Fashion Collection',
+    description: 'Elevate your style with our premium clothing and accessories',
   },
   {
-    image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1920',
-    title: 'Exclusive Deals & Offers',
-    description: 'Get the best prices on your favorite products',
+    image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1920&q=80',
+    title: 'Sports & Fitness',
+    description: 'Premium sports gear and fitness equipment for your active lifestyle',
   },
+  {
+    image: 'https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?w=1920&q=80',
+    title: 'Tech Essentials',
+    description: 'Shop the latest laptops, smartphones, and accessories',
+  }
 ];
 
 export default function HeroSlider() {
@@ -48,13 +53,15 @@ export default function HeroSlider() {
               src={slide.image}
               alt={slide.title}
               fill
-              className="object-cover opacity-50"
+              className="object-cover opacity-60"
               priority={index === 0}
+              sizes="100vw"
+              quality={90}
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-              <div className="text-white max-w-2xl">
+              <div className="text-white max-w-2xl animate-fade-in">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                   {slide.title}
                 </h1>
@@ -64,7 +71,7 @@ export default function HeroSlider() {
                 <div className="flex items-center gap-4">
                   <Link
                     href="/products"
-                    className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
+                    className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold hover:scale-105 transform duration-200"
                   >
                     Shop Now
                     <ArrowRight className="h-5 w-5" />
@@ -87,6 +94,7 @@ export default function HeroSlider() {
                 ? 'bg-white w-6'
                 : 'bg-white/50 hover:bg-white/75'
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
